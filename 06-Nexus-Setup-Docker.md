@@ -24,6 +24,7 @@ docker -v
 ## Step-5 : Run Nexus using docker image
 ```
 docker run -d -p 8081:8081 --name nexus sonatype/nexus3
+docker run -d -p 8081:8081 --name nexus sonatype/nexus3
 ```
 
 ## Step-6: Enable 8001 port number in Security Group Inbound Rules & Access Sonar Server
