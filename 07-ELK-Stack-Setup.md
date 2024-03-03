@@ -17,7 +17,7 @@ ELK is the combination of 3 open source products
 
 2) Extract all zip files 
 
-3) Run elasticsearch using elasticsearch.bat file (make sure all security settings disable in elasticsearch.yml before running)
+3) Run elasticsearch using elasticsearch.bat file (make sure all security settings disable in elasticsearch.yml before running ==> xpack.security.enabled: false)
 
 		$ elasticsearch.bat
 
