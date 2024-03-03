@@ -15,23 +15,27 @@ ELK is the combination of 3 open source products
      - Kibana : https://www.elastic.co/downloads/kibana
      - Logstash : https://www.elastic.co/downloads/logstash
 
-2) Extract all zip files 
+2) Extract all zip files
 
-3) Run elasticsearch using elasticsearch.bat file (make sure all security settings disable in elasticsearch.yml before running ==> xpack.security.enabled: false)
+3) Steps(make sure all security settings disable in elasticsearch.yml before running ==> xpack.security.enabled: false)
+      step-1 : Open  ==> C:\kibana\elasticsearch-8.12.2\config
+      step-2 : search ==> xpack.security.enabled: true   ==>[true --> false] ==> xpack.security.enabled: false
+   
+5) Run elasticsearch using elasticsearch.bat file 
 
 		$ elasticsearch.bat
 
-4) Check Elastic Search Running or not (URL  : http://localhost:9200/ )
+6) Check Elastic Search Running or not (URL  : http://localhost:9200/ )
 
-5) Run kibana using kibana.bat file (before running kibana, enable elasticsearch url in kibana.yml file)
+7) Run kibana using kibana.bat file (before running kibana, enable elasticsearch url in kibana.yml file)
 
 		$ kibana.bat
 
-6) Check Kibana running or not ( URL : http://localhost:5601/app/home )
+8) Check Kibana running or not ( URL : http://localhost:5601/app/home )
 
-7) Run Spring Boot Application and generate log file with log messages
+9) Run Spring Boot Application and generate log file with log messages
 
-8) create logstash.conf file like below 
+10) create logstash.conf file like below 
 
 ```
 input {
